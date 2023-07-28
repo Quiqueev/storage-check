@@ -7,10 +7,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 screen_width = 800
 
 customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("green")  # Themes: blue (default), dark-blue, green
-
-def button_function():
-    print("button pressed")
+customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
 
 def get_storage(): 
     global used_storage_barline
@@ -65,7 +62,5 @@ storage_label = customtkinter.CTkLabel(data_frame, text="", font=("Arial", 14))
 get_storage()
 
 storage_label.pack()
-
-
 
 root.mainloop()
